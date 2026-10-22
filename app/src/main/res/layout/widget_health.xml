@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/w_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:src="@drawable/widget_bg" />
+    <LinearLayout
+        android:id="@+id/w_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout android:id="@+id/w_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:id="@+id/w_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end" />
+            <TextView android:id="@+id/w_when" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" />
+        </LinearLayout>
+        <TextView android:id="@+id/w_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:maxLines="1" android:ellipsize="end" android:textStyle="bold"/>
+        <LinearLayout android:id="@+id/w_rings" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:gravity="center">
+        <LinearLayout android:id="@+id/w_r1_box" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:id="@+id/w_ring1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:adjustViewBounds="true" android:importantForAccessibility="no" android:scaleType="fitCenter" />
+            <TextView android:id="@+id/w_ring1_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/w_r2_box" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <ImageView android:id="@+id/w_ring2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:adjustViewBounds="true" android:importantForAccessibility="no" android:scaleType="fitCenter" />
+            <TextView android:id="@+id/w_ring2_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/w_btns" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:orientation="horizontal">
+        <TextView android:id="@+id/w_b1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end" />
+        <TextView android:id="@+id/w_b2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end" />
+        <TextView android:id="@+id/w_b3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

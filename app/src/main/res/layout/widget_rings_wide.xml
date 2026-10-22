@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/w_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:src="@drawable/widget_bg" />
+    <ImageView
+        android:id="@+id/w_sheen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:src="@drawable/widget_sheen" />
+    <LinearLayout
+        android:id="@+id/w_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/w_dual"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter" />
+        <LinearLayout
+            android:id="@+id/w_legend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="4dp">
+            <TextView android:id="@+id/w_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:maxLines="1" android:ellipsize="end" android:textSize="11sp" android:textStyle="bold" />
+            <LinearLayout android:id="@+id/w_l1_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <ImageView android:id="@+id/w_l1_dot" android:layout_width="8dp" android:layout_height="8dp" android:importantForAccessibility="no" android:src="@drawable/widget_dot" />
+                    <TextView android:id="@+id/w_l1_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:maxLines="1" android:ellipsize="end" android:textSize="13sp" android:textStyle="bold" />
+                </LinearLayout>
+                <TextView android:id="@+id/w_l1_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:maxLines="1" android:ellipsize="end" android:textDirection="ltr" android:textSize="11sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/w_l2_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                    <ImageView android:id="@+id/w_l2_dot" android:layout_width="8dp" android:layout_height="8dp" android:importantForAccessibility="no" android:src="@drawable/widget_dot" />
+                    <TextView android:id="@+id/w_l2_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:maxLines="1" android:ellipsize="end" android:textSize="13sp" android:textStyle="bold" />
+                </LinearLayout>
+                <TextView android:id="@+id/w_l2_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:maxLines="1" android:ellipsize="end" android:textDirection="ltr" android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

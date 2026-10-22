@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- picker preview for Android 12+ (previewLayout); static sample values, same look as the real widget -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg_dark">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/wd_id_title"
+            android:textColor="#FF60A5FA"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:text="Samsung Galaxy A14 4G"
+            android:textColor="#FFF4F5FF"
+            android:textDirection="ltr"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SM-A145P"
+            android:textColor="#FFC3CAEA"
+            android:textDirection="ltr"
+            android:textAlignment="viewStart"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Android 15  ·  API 35"
+            android:textColor="#FFF4F5FF"
+            android:textDirection="ltr"
+            android:textAlignment="viewStart"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            android:text="66%"
+            android:textColor="#FFC3CAEA"
+            android:textDirection="ltr"
+            android:textAlignment="viewStart"
+            android:textSize="10.5sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/widget_preview_bar" />
+    </LinearLayout>
+</FrameLayout>

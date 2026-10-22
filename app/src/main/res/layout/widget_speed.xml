@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/w_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="fitXY"
+        android:src="@drawable/widget_bg" />
+    <LinearLayout
+        android:id="@+id/w_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout android:id="@+id/w_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:id="@+id/w_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end" />
+            <TextView android:id="@+id/w_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/w_vals" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:gravity="center_vertical">
+        <LinearLayout android:id="@+id/w_down_box" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_vertical">
+            <TextView android:id="@+id/w_down_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" />
+            <TextView android:id="@+id/w_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="22sp" android:maxLines="1" android:ellipsize="end" android:textStyle="bold"/>
+            <TextView android:id="@+id/w_down_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/w_up_box" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_vertical">
+            <TextView android:id="@+id/w_up_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" />
+            <TextView android:id="@+id/w_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="22sp" android:maxLines="1" android:ellipsize="end" android:textStyle="bold"/>
+            <TextView android:id="@+id/w_up_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" />
+        </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@+id/w_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:maxLines="1" android:ellipsize="end" />
+        <LinearLayout android:id="@+id/w_btns" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:orientation="horizontal">
+        <TextView android:id="@+id/w_b1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end" />
+        <TextView android:id="@+id/w_b2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
