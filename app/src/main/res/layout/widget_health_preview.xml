@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- picker preview for Android 12+ (previewLayout); static sample values, same look as the real widget -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg_dark">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:orientation="vertical" android:padding="12dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:maxLines="1" android:ellipsize="end" android:text="@string/wd_health_title" android:textColor="@color/wd_prev_accent" android:textSize="12sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="37.0 °C" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:textStyle="bold" android:maxLines="1" android:textDirection="ltr" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" android:scaleType="fitCenter" android:src="@drawable/widget_preview_ring_a" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="86%" android:textColor="@color/wd_prev_text" android:textDirection="ltr" android:textSize="16sp" android:textStyle="bold" />
+                </FrameLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/sec_battery" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" android:scaleType="fitCenter" android:src="@drawable/widget_preview_ring_b" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="78%" android:textColor="@color/wd_prev_text" android:textDirection="ltr" android:textSize="16sp" android:textStyle="bold" />
+                </FrameLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/sec_storage" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" android:scaleType="fitCenter" android:src="@drawable/widget_preview_ring_c" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="48%" android:textColor="@color/wd_prev_text" android:textDirection="ltr" android:textSize="16sp" android:textStyle="bold" />
+                </FrameLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/wd_ram_short" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:background="@drawable/widget_pill_0" android:gravity="center" android:minHeight="32dp" android:paddingStart="14dp" android:paddingEnd="14dp" android:text="@string/tool_cleaner" android:textColor="@color/wd_prev_accent" android:textSize="12sp" android:textStyle="bold" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:background="@drawable/widget_pill_0" android:gravity="center" android:minHeight="32dp" android:paddingStart="14dp" android:paddingEnd="14dp" android:text="@string/tool_storage" android:textColor="@color/wd_prev_accent" android:textSize="12sp" android:textStyle="bold" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:background="@drawable/widget_pill_0" android:gravity="center" android:minHeight="32dp" android:paddingStart="14dp" android:paddingEnd="14dp" android:text="@string/tool_battery" android:textColor="@color/wd_prev_accent" android:textSize="12sp" android:textStyle="bold" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

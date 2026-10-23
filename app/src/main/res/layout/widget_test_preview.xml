@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- picker preview for Android 12+ (previewLayout); static sample values, same look as the real widget -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg_dark">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:orientation="vertical" android:padding="12dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:gravity="center_vertical" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="↓ Mbps" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:maxLines="1" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="bottom" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="48.2" android:textColor="@color/wd_prev_accent" android:textSize="22sp" android:textStyle="bold" android:maxLines="1" android:textDirection="ltr" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3dp" android:layout_marginBottom="3dp" android:text="" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:textDirection="ltr" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="↑ Mbps" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:maxLines="1" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="bottom" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12.6" android:textColor="@color/wd_prev_accent" android:textSize="22sp" android:textStyle="bold" android:maxLines="1" android:textDirection="ltr" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3dp" android:layout_marginBottom="3dp" android:text="" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:textDirection="ltr" />
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_ping" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:maxLines="1" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="bottom" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45" android:textColor="@color/wd_prev_text" android:textSize="22sp" android:textStyle="bold" android:maxLines="1" android:textDirection="ltr" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3dp" android:layout_marginBottom="3dp" android:text="ms" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:textDirection="ltr" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_jitter" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:maxLines="1" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="bottom" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.1" android:textColor="@color/wd_prev_text" android:textSize="22sp" android:textStyle="bold" android:maxLines="1" android:textDirection="ltr" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3dp" android:layout_marginBottom="3dp" android:text="ms" android:textColor="@color/wd_prev_muted" android:textSize="12sp" android:textDirection="ltr" />
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/widget_pill_0" android:gravity="center" android:minHeight="32dp" android:paddingStart="14dp" android:paddingEnd="14dp" android:text="@string/wd_start_test" android:textColor="@color/wd_prev_accent" android:textSize="12sp" android:textStyle="bold" android:maxLines="1" android:layout_marginTop="6dp" />
+    </LinearLayout>
+</FrameLayout>

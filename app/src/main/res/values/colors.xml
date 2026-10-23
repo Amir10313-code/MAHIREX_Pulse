@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#F3F2FF</color>
+    <color name="glow1">#7AA2FF</color>
+    <color name="glow2">#C79BFF</color>
+    <color name="glow3">#F0A6FF</color>
+    <color name="card">#CCFFFFFF</color>
+    <color name="card_solid">#FFFFFF</color>
+    <color name="text_primary">#12183A</color>
+    <color name="text_muted">#5B6591</color>
+    <color name="accent">#2563EB</color>
+    <color name="accent2">#9333EA</color>
+    <color name="accent3">#0EA5E9</color>
+    <color name="on_accent">#FFFFFF</color>
+    <color name="ok">#0E9F6E</color>
+    <color name="warn">#C77D0A</color>
+    <color name="bad">#D93F4F</color>
+    <color name="divider">#1F2563EB</color>
+    <color name="ic_bg">#050816</color>
+    <!-- home-screen widgets (independent of the app theme: the widget has its own light / dark choice) -->
+    <color name="wd_tint_d">#A78BFA</color>
+    <color name="wd_tint_l">#7C3AED</color>
+    <color name="wd_good_d">#34D399</color>
+    <color name="wd_good_l">#0E9F6E</color>
+    <color name="wd_warn_a">#FBBF24</color>
+    <color name="wd_warn_b">#F59E0B</color>
+    <color name="wd_bad_a">#F97316</color>
+    <color name="wd_bad_b">#EF4444</color>
+    <color name="wd_track_d">#33FFFFFF</color>
+    <color name="wd_track_l">#1F000000</color>
+    <color name="wd_guide_d">#22FFFFFF</color>
+    <color name="wd_guide_l">#14000000</color>
+    <!-- static picker previews (Android 12+): the dark look of the widgets -->
+    <color name="wd_prev_accent">#60A5FA</color>
+    <color name="wd_prev_tint">#A78BFA</color>
+    <color name="wd_prev_text">#F4F5FF</color>
+    <color name="wd_prev_muted">#C3CAEA</color>
+</resources>
